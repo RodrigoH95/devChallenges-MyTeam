@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/RodrigoH95/devChallenges-MyTeam/blob/main/img/demo.png?raw=true)
+![screenshot](https://github.com/RodrigoH95/devChallenges-MyTeam/blob/main/img/preview.png?raw=true)
 
 ### Built With
 

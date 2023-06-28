@@ -1,0 +1,16 @@
+#footer {
+  margin-bottom: 1rem;
+}
+
+#footer-text {
+  font-size: 14px;
+  font-family: var(--ff-secondary);
+  text-align: center;
+  color: var(--color-terciary);
+}
+
+#footer-url {
+  text-decoration: none;
+  color: var(--color-terciary);
+  font-weight: 700;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --color-primary: #333333;
+  --color-secondary: #4F4F4F;
+  --color-terciary: #BDBDBD;
+
+  --ff-serif: 'PT Serif', sans-serif;
+  --ff-secondary: 'Montserrat', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0 15%;
+  padding: 0;
+  height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 80%;
+}
+
+#title {
+  font-family: var(--ff-serif);
+  font-size: 36px;
+}
+
+#about {
+  font-family: var(--ff-poppins);
+}
+
+#about > h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#about > p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 4rem;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  margin: 2rem auto;
+}
+
+.card:nth-child(3n-1) {
+  top: 3rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(125%);
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out, filter 0.2s;
+}
+
+.role {
+  position: absolute;
+  font-family: var(--ff-serif);
+  font-weight: 400;
+  font-size: 12px;
+  white-space: nowrap;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  left: calc(100% + 1.5rem);
+  text-transform: uppercase;
+}
+
+.img-container {
+  margin: 0;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}
+
+.name {
+  font-family: var(--ff-poppins);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(3n-1) {
+    top: initial;
+  }
+
+  .card:nth-child(even) {
+    top: 3rem;
+  }
+  
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  #about > p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 150px;
+  }
+
+  .role {
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}
